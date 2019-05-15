@@ -1,0 +1,10 @@
+.header__nav {
+
+    &--fixed {
+    background: linear-gradient(to right, $color-text-secondary, $color-alt-primary);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: -3em;
+    }
+}

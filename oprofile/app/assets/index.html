@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oProfile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="default-layout">
+
+  <header class="header">
+    <nav class="header__nav">
+      <span class="header__nav__logo">Oprofile</span>
+      <div class="header__nav__social">
+        <ul class="header__nav__social__list">
+          <li> <a href="#" class="header__nav__social__list__icon"><i class="fa fa-twitter"></i></a> </li>
+          <li> <a href="#" class="header__nav__social__list__icon"><i class="fa fa-facebook"></i></a> </li>
+          <li> <a href="#" class="header__nav__social__list__icon"><i class="fa fa-google-plus"></i></a> </li>
+          <li> <a href="#" class="header__nav__social__list__icon"><i class="fa fa-instagram"></i></a> </li>
+          <li> <a href="#" class="header__nav__social__list__icon"><i class="fa fa-github"></i></a> </li>
+        </ul>
+      </div>
+      <a class="header__nav__menu" href="#"><i class="fa fa-bars" style="color: transparent"></i></a>
+
+    </nav>
+    <main class="header__description">
+      <h1 class="header__description__title">Hello, je suis Miss Kaplan</h1>
+      <p class="header__description__bio">Une developpeuse WordPress Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Ad ratione pariatur praesentium perspiciatis voluptatibus dolore dignissimos harum fuga deleniti vel odit
+        iure odio numquam nisi itaque, assumenda atque modi dolores.</p>
+      <div class="header__description__bio__button">
+        <a href="#posts" class="header__description__bio__button__contact">En savoir plus</a>
+        <a href="#contact" class="header__description__bio__button__contact">Contact</a>
+      </div>
+    </main>
+  </header>
+
+  <main class="posts container-fluid" id="posts">
+    <div class="row">
+      <article class="post col-5" style="background-image: url(visuels/neige.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">Winter view</h4>
+        </header>
+        <main class="post__main">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, illum?</p>
+        </main>
+      </article>
+      <article class="post col-7" style="background-image: url(visuels/fete.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">On the fly</h4>
+        </header>
+        <main class="post__main">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, illum?</p>
+        </main>
+      </article>
+    </div>
+    <div class="row">
+      <article class="post col-7" style="background-image: url(visuels/arbre.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">Horizon</h4>
+        </header>
+        <main class="post__main">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quo totam, mollitia sed odit atque.</p>
+        </main>
+      </article>
+      <article class="post col-5" style="background-image: url(visuels/montagne.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">Party Tour</h4>
+        </header>
+        <main class="post__main">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque illum fuga facere!</p>
+        </main>
+      </article>
+    </div>
+    <div class="row">
+      <article class="post col-5" style="background-image: url(visuels/neige.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">L&apos;agence d&apos;côté</h4>
+        </header>
+        <main class="post__main">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </main>
+      </article>
+      <article class="post col-7" style="background-image: url(visuels/soleil.jpg)">
+        <header class="post__header">
+          <h4 class="post__header__title">Sunlight</h4>
+        </header>
+        <main class="post__main">
+          <p class="anchor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure velit doloribus ipsum quae alias numquam
+            laudantium, quo quibusdam nesciunt maxime!</p>
+        </main>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <form class="form" id="contact">
+      <fieldset class="form__fieldset">
+        <p class="field">
+          <label class="field__label" for="name">Nom</label>
+          <input class="field__input" id="name" type="text" />
+        </p>
+        <p class="field">
+          <label class="field__label" for="email">E-mail</label>
+          <input class="field__input" id="email" type="email" />
+        </p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <p class="field field--textarea">
+          <label class="field__label" for="message">Message</label>
+          <textarea class="field__input field__input" id="message" type="email"></textarea>
+        </p>
+      </fieldset>
+      <button class="form__submit-button" type="submit">Envoyer</button>
+    </form>
+    <ul class="informations-list">
+      <li class="informations-list__information">
+        <i class="informations-list__information__icon fa fa-envelope"></i>
+        <span class="informations-list__information__title">E-mail</span>
+        <a href="mailto:kaplan@oprofile.local" class="informations-list__information__content">kaplan@oprofile.local</a>
+      </li>
+      <li class="informations-list__information">
+        <i class="informations-list__information__icon fa fa-phone"></i>
+        <span class="informations-list__information__title">Téléphone</span>
+        <a href="tel:+33607080910" class="informations-list__information__content">+33 6 07 08 09 10</a>
+      </li>
+      <li class="informations-list__information">
+        <i class="informations-list__information__icon fa fa-home"></i>
+          <span class="informations-list__information__title">Adresse</span>
+        <p class="informations-list__information__content">Lorem ipsum<br />dolor sit<br />amet</p>
+      </li>
+    </ul>
+  </footer>
+  <!-- <div class="menu">
+    <div class="menu__burger">
+      <ul class="menu__burger__list">
+        <li class="menu__burger__list__item"><a href="#" class="menu__list__item__link">Accueil</a></li>
+        <li class="menu__burger__list__item"><a href="#" class="menu__list__item__link">Blog</a></li>
+        <li class="menu__burger__list__item"><a href="#" class="menu__list__item__link">Projets</a></li>
+      </ul>
+      <nav class="menu">
+        <ul class="header__nav__social__list">
+          <li> <a href="" class="header__nav__social__list__icon"><i class="fa fa-twitter"></i></a> </li>
+          <li> <a href="" class="header__nav__social__list__icon"><i class="fa fa-facebook"></i></a> </li>
+          <li> <a href="" class="header__nav__social__list__icon"><i class="fa fa-google-plus"></i></a> </li>
+          <li> <a href="" class="header__nav__social__list__icon"><i class="fa fa-instagram"></i></a> </li>
+          <li> <a href="" class="header__nav__social__list__icon"><i class="fa fa-github"></i></a> </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="overlay__close-button"><i class="fa fa-close"></i></a>
+  </div> -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+.header {
+    background: {
+        image: url(../assets/visuels/see.jpg);
+        size: cover;
+    }
+
+    grid-area: header;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+
+
+    &__nav {
+        padding: 1em 2em;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            padding: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &__social {
+            padding: 1em;
+
+            &__list {
+                list-style-type: none;
+                display: flex;
+
+                &__icon {
+                    color: $color-text-primary;
+                    padding: 1em;
+                }
+            }
+        }
+
+        &__menu {
+            color: $color-text-primary;
+            font-size: 1.2em;
+            padding: 1em;
+        }
+    }
+
+    &__description {
+        padding: 2.5em;
+        position: relative;
+        top: 20%;
+
+
+
+        &__title {
+            padding-bottom: 1em;
+            width: 40%;
+        }
+
+        &__bio {
+            font-weight: 600;
+            line-height: 1.2em;
+            text-align: justify;
+            width: 40%;
+            padding-bottom: 2em;
+
+            &__button {
+                align-items: flex-start;
+                display: inline-flex;
+                flex-direction: column;
+                font-size: 0.8em;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                &__contact {
+                    border: 3px solid $color-alt-primary;
+                    border-radius: 3px;
+                    color: $color-alt-primary;
+                    margin-bottom: 0.5em;
+                    padding: 0.5em 0.7em;
+                    text-decoration: none;
+                    transition: color $duration-slow;
+                    transition: margin-left $duration-fast;
+
+
+                    &::after {
+                        content: $fa-var-long-arrow-right;
+                        @include fa-icon;
+                        margin-left: 1em;
+                    }
+
+                    &:hover {
+                        border-color: lighten($color-alt-primary, 12);
+                        color: lighten($color-alt-primary, 12);
+                    }
+                }
+            }
+        }
+    }
+
+    &::after {
+        background: linear-gradient(to right,
+            transparentize($color-text-secondary, 0.5) transparent);
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}

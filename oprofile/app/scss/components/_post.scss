@@ -1,0 +1,19 @@
+.post {
+    background-size: cover;
+    color: $color-text-primary;
+    padding: 3em 5em;
+
+    &__header {
+        &__title {
+            border-bottom: 1px solid $color-text-primary;
+            font: {
+                size: 1.25rem;
+                weight: 900;
+            }
+            margin-bottom: 3em;
+            padding-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+    }
+}
+

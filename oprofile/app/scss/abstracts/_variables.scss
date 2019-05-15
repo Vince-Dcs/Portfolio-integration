@@ -1,0 +1,24 @@
+$fa-font-path: '~font-awesome/fonts';
+
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
+
+$color-text-primary: #ffffff;
+$color-text-secondary: black;
+$color-alt-primary: #7abcfd;
+$color-alt-secondary: #8A7EF5;
+
+$color-footer: #292f4c;
+$color-footer-text: lighten($color-footer, 75);
+$color-footer-border: lighten($color-footer, 50);
+
+$color-skills-background: #F4F5F9;
+$color-skills-border: #D2D2D2;
+
+$duration: .5s;
+$duration-fast: .25s;
+$duration-slow: 1s;
+
+$font-stack: 'Roboto', Arial, sans-serif;
+$font-stack-title: 'Roboto Slab', serif;
+

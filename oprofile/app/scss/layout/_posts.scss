@@ -1,0 +1,28 @@
+.posts {
+    
+    @media (min-width: $breakpoint-medium) {
+        flex: {
+            direction: row;
+            wrap: wrap;
+        }
+    }
+
+    .post {
+        position: relative;
+        z-index: -1;
+        box-shadow: inset 3px 3px 5px transparentize($color-footer, 0.45), inset -3px -3px 5px transparentize($color-footer, 0.45) ;
+
+        &::after {
+            background-color: transparentize(#000, 0.75);
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -2;
+        }
+
+    }
+     
+}
