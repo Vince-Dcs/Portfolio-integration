@@ -1,2 +1,3 @@
 # Portfolio-integration
-Intégration HTML/SASS
+- Intégration HTML/SASS
+- Gestionnaire de paquets WebPack
